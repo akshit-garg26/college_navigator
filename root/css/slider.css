@@ -1,0 +1,112 @@
+
+   
+*{
+  box-sizing: border-box;
+}
+body 
+{
+  font-family: Verdana, sans-serif;
+  background-color: antiquewhite;
+}
+  
+.image-sliderfade 
+{
+  display: none;
+  /* width: 800px; */
+}
+  
+img 
+{
+  vertical-align: middle;
+  height: 474px;
+  border-radius: 15px;
+}
+  
+/* Slideshow container */
+.slider-container 
+{
+  max-width: 1000px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  border: 15px solid black;
+  border-radius: 15px;
+  /* overflow: hidden; */
+}
+  
+/* The dots/bullets/indicators */
+.slider-dot 
+{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: #ddd;
+  border-width: 5 px;
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  transition: border-color 0.6s ease;
+}
+  
+.active 
+{
+  border-color: #666;
+}
+  
+/* Animation */
+.fade 
+{
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade-image;
+  animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+@keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{
+  .text {font-size: 11px}
+}
+table,tr,th,td{
+    border: 2px solid blue;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+}
+th{
+    background-color: #8ed6c6;
+}
+.course-offered{
+    margin-top: 50px;
+}
+.course-offered li{
+    font-size: 20px;
+}
+.website-button{
+    height: 40px;
+    background-color: black;
+    width: 391px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.website-button a{
+    height: 50px;
+    color: white;
+    font-size: 17px;
+   
+    text-decoration: none;
+}

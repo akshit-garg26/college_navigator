@@ -1,0 +1,103 @@
+.college-name-head{
+    font-size: 45px;
+    width: 1020px;
+    margin: 30px auto;;
+    color: rgb(235 0 50);
+}
+.college-container{
+    background-image: url("/root/assets/college-theme.jpeg");
+     background-size: 100% 850px;
+    background-image: contain;
+    /* width: 1300px; */
+    height: 980px;
+    /* margin: 20px auto; */
+    /* border-radius: 20px; */
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.college-container table{
+    position: absolute;
+      top: 50px;
+     left: 0px;
+     right: 0px;
+     margin-right: auto; 
+    margin-left: auto; 
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.college-table thead{
+    background-color: #664949;
+    font-size: 25px;
+    
+}
+.college-table{
+    background-color:#f0e6e6;
+    border-radius: 30px;
+    margin:30px auto ;   
+}
+.college-table td,th,table{
+    border: 2px solid #664949;
+    border-collapse: collapse;
+}
+.college-table td,th{
+    padding: 10px;
+}
+.college-table li{
+    list-style: none;
+    font-family:  'Playfair', serif;
+}
+.iit-logo{
+    width: 70px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+.iit-logo-head{
+    font-size: 20px;
+}
+
+.college-name{
+    text-decoration: none;
+    color: black;
+}
+.nit-logo{
+    width: 70px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+.nit-logo-head{
+    font-size: 20px;
+}
+#nit-college-container{
+    height: 1100px;
+    background-size: 100% 975px;
+}
+.iiit-logo{
+    width: 70px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+.iiit-logo-head{
+    font-size: 20px;
+}
+#iiit-college-container{
+    height: 1100px;
+    background-size: 100% 975px;
+}
+.pvt-logo{
+    width: 70px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+.pvtt-logo-head{
+    font-size: 20px;
+}
+#pvt-college-container{
+    height: 1100px;
+    background-size: 100% 975px;
+}
+

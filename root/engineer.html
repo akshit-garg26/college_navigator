@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/eng-iit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap" rel="stylesheet">
+
+    <title>Engineering</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow-x:hidden;
+    }
+    body{
+        background-color: #dddddd;;
+    }
+    .card{
+        width: 320px;
+        height: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+        border:8px solid black;
+        position: relative;
+    }
+    .card:hover .card-body{
+        right: 0;
+        transition: 2s;
+    }
+    .card-img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .card-body{
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        right: -100%;
+        position: absolute;
+        background: #1f3d4738;
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: #fff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-title{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .eng-btn{
+        text-decoration: none;
+        background-color:#8fabbb;
+        color: #1f3d47;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        margin-top: 15px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        margin: 50px;
+        width: 50%;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .engineer{
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 400px;
+        margin:10px 36px;
+    }
+    .box{
+        text-decoration: none;
+        color: #737134;
+    }
+    .img-clg{
+        height: 200px;
+        border-radius: 5px;
+    }
+    #iit-img{
+        width: 397px;
+    }
+    #nit-img{
+        width: 397px;
+    }
+    #iiit-img{
+        width: 397px;
+    }
+    #private-img{
+        width: 397px;
+    }
+    .title-eng{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+   <div class="container"> 
+    <div class="card">
+        <img src="./assets/iit-g.jpg" class="card-img" alt="iit_colleges">
+        <div class="card-body">
+            <h1 class="card-title">IIT Colleges</h1>
+            <a class="eng-btn" href="#iit-college-container">Check Now</a>
+        </div>
+       </div>
+       <div class="card">
+        <img src="./assets/trichy.webp" class="card-img" alt="nit_colleges">
+        <div class="card-body">
+            <h1 class="card-title">NIT Colleges</h1>
+            <a class="eng-btn" href="#nit-college-container">Check Now</a>
+        </div>
+       </div>
+        <div class="card">
+            <img src="./assets/iiit-d.jpg" class="card-img" alt="iiit_colleges">
+            <div class="card-body">
+                <h1 class="card-title">IIIT Colleges</h1>
+                <a class="eng-btn" href="#iiit-college-container">Check Now</a>
+            </div>
+           </div>
+        <div class="card">
+            <img src="./assets/BITS-Pilani.jpg" class="card-img" alt="private_colleges">
+            <div class="card-body">
+                <h1 class="card-title">Private Colleges</h1>
+                <a class="eng-btn" href="#pvt-college-container">Check Now</a>
+            </div>
+           </div>
+    </div>
+    <!--Top 7 iit colleges-->
+ 
+    <h1 class="college-name-head">List of IIT Colleges in India Based on 2023 Ranking</h1>   
+    <div class="college-container" id="iit-college-container">
+         <table class="college-table" id="iit-college-table">
+            <thead class="college-head">
+                <th>Rank</th>
+                <th>College</th>
+                <th>Ranking</th>
+            </thead>
+            <tbody>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#1</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/iit-pages/iit-madras.html">
+                            <img class="iit-logo" src="./assets/iit-madras-logo.jpg" alt="#">
+                        <li class="iit-logo-head"><b> IIT Madras-Indian Institute of Technology-[IITM]</b>
+                            <ul>
+                                <li>Chennai,Tamil Nadu</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+
+                </td>
+                <td><b>#3</b> out of 216 in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+           
+                <td>#2</td>
+                <td>
+                    <ul>
+                        <a href="/root/pages/iit-pages/iit-delhi.html" class="college-name">             
+                            <img class="iit-logo" src="./assets/iit-delhi-logo.jpg " alt="#">
+                        <li class="iit-logo-head"><b> IIT Delhi-Indian Institute of Technology-[IITD]</b>
+                            <ul>
+                                <li>New Delhi,Delhi NCR</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#1</b> out of 32 in India 2022</td>
+
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#3</td>
+                <td>
+                    <ul>
+                    <a href="/root/pages/iit-pages/iit-bombay.html" class="college-name">
+                        <img class="iit-logo" src="./assets/iit-b-logo.jpg" alt="#">
+                        <li class="iit-logo-head"><b> IIT Bombay-Indian Institute of Technology-[IITB]</b>
+                            <ul>
+                                <li>Mumbai,Maharashtra</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#2</b> out of 32 in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#4</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/iit-pages/iit-kharagpur.html">
+                            <img class="iit-logo" src="./assets/iit-kharag-logo.jpg" alt="#">
+                        <li class="iit-logo-head"><b> IIT Kharagpur-Indian Institute of Technology-[IITKGP]</b>
+                            <ul>
+                                <li>Kharagpur-West Bengal</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#4</b> out of 32 in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#5</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/iit-pages/iit-kanpur.html" >
+                            <img class="iit-logo" src="./assets/iit-kanpur-logo.png" alt="#">
+                        <li class="iit-logo-head"><b> IIT Kanpur-Indian Institute of Technology-[IITK]</b>
+                            <ul>
+                                <li>Kanpur,Uttar Pradesh</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#3</b> out of 32 in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#6</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/iit-pages/iit-rorkee.html">
+                            <img class="iit-logo" src="./assets/iit-roorkee-logo.png" alt="#">
+                        <li class="iit-logo-head"><b> IIT Roorkee-Indian Institute of Technology-[IITR]</b>
+                            <ul>
+                                <li>Roorkee,Uttarakhand</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#5</b> out of 32 in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#7</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/iit-pages/iit-guwahti.html">
+                            <img class="iit-logo" src="./assets/iit-guwahti-logo.jpg" alt="#">
+                            <li class="iit-logo-head"><b> IIT Guwahati-Indian Institute of Technology-[IITG]</b>
+                            <ul>
+                                <li>Guwahati,Assam</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#6</b> out of 32 in India 2022</td>
+            </tr>
+
+            </tbody>
+        </table>
+   </div>
+    <!--Top 8 nit colleges-->
+ 
+    <h1 class="college-name-head">List of NIT Colleges in India Based on 2023 Ranking</h1>   
+    <div class="college-container" id="nit-college-container">
+         <table class="college-table" id="nit-college-table">
+            <thead class="college-head">
+                <th>Rank</th>
+                <th>College</th>
+                <th>Ranking</th>
+            </thead>
+            <tbody>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#1</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/nit-pages/nit-trichy.html">
+                            <img class="nit-logo" src="./assets/n-trichy-logo.jpg" alt="#">
+                        <li class="nit-logo-head"><b> NIT Trichy-National Institute of Technology</b>
+                            <ul>
+                                <li>Tiruchirappalli,Tamil Nadu</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+
+                </td>
+                <td><b>#17<sup>th</sup>/50</b> in India 2019</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+           
+                <td>#2</td>
+                <td>
+                    <ul>
+                        <a href="/root/pages/nit-pages/nit-rourkela.html" class="college-name">             
+                            <img class="nit-logo" src="./assets/n-rourkela-logo.jpg " alt="#">
+                        <li class="nit-logo-head"><b> NIT Rourkela-National Institute of Technology-</b>
+                            <ul>
+                                <li>Rourkela,Orissa</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#39<sup>th</sup>/200</b> in India 2022</td>
+
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#3</td>
+                <td>
+                    <ul>
+                    <a href="/root/pages/nit-pages/nit-surathkal.html" class="college-name">
+                        <img class="nit-logo" src="./assets/n-suratkal-logo.jpg" alt="#">
+                        <li class="nit-logo-head"><b> NIT Surathkal-National Institute of Technology</b>
+                            <ul>
+                                <li>Surathkal,Karnataka</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#11<sup>th</sup>/34</b> in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#4</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/nit-pages/nit-warangal.html">
+                            <img class="nit-logo" src="./assets/n-warangal-logo.png" alt="#">
+                        <li class="nit-logo-head"><b>NIT Warangal-National Institute of Technology</b>
+                            <ul>
+                                <li>Warangal,Telangana</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#13<sup>th</sup>/34</b> in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#5</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/nit-pages/nit-calicut.html" >
+                            <img class="nit-logo" src="./assets/nit-calicut-logo.png" alt="#">
+                        <li class="nit-logo-head"><b>NIT Calicut-Indian Institute of Technology</b>
+                            <ul>
+                                <li>Calicut,Kerala</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#20<sup>th</sup>/34</b> in India 2021</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#6</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/nit-pages/nit-nagpur.html">
+                            <img class="nit-logo" src="./assets/n-nagpur-logo.jpg" alt="#">
+                        <li class="nit-logo-head"><b> VNIT Nagpur-National Institute of Technology</b>
+                            <ul>
+                                <li>Nagpur,Maharashtra</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#22<sup>th</sup>/34</b> in India 2021</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#7</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/nit-pages/nit-allahabad.html">
+                            <img class="nit-logo" src="./assets/n-allahabad-logo.jpg" alt="#">
+                            <li class="nit-logo-head"><b> MNNIT Allahabad-National Institute of Technology</b>
+                            <ul>
+                                <li>Allahabad,UttarPardesh</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#23<sup>th</sup>/34</b> in India 2021</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#8</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/nit-pages/nit-kkr.html">
+                            <img class="nit-logo" src="./assets/n-kkr-logo.png" alt="#">
+                            <li class="nit-logo-head"><b>NIT Kurukshetra-National Institute of Technology</b>
+                            <ul>
+                                <li>Kurukshetra,Haryana</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#26<sup>th</sup>/216</b> in India 2022</td>
+            </tr>
+
+            </tbody>
+        </table>
+   </div>
+     <!--top 8 iiit colleges-->
+     <h1 class="college-name-head">List of IIIT Colleges in India Based on 2023 Ranking</h1>   
+     <div class="college-container" id="iiit-college-container">
+          <table class="college-table" id="iiit-college-table">
+             <thead class="college-head">
+                 <th>Rank</th>
+                 <th>College</th>
+                 <th>Ranking</th>
+             </thead>
+             <tbody>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                 <td>#1</td>
+                 <td>
+                     <ul>
+                         <a class="college-name" href="/root/pages/iiit-pages/iiit-hyderabad.html">
+                             <img class="iiit-logo" src="./assets/iiit-hyderabad-logo.jpg" alt="#">
+                         <li class="iiit-logo-head"><b> IIIT Hyderabad-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Hyderabad,Telangana</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+ 
+                 </td>
+                 <td><b>#18<sup>th</sup>/34</b> in India 2021</td>
+             </tr>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+            
+                 <td>#2</td>
+                 <td>
+                     <ul>
+                         <a href="/root/pages/iiit-pages/iiit-banglore.html" class="college-name">             
+                             <img class="iiit-logo" src="./assets/iiit-banglore-logo.jpg " alt="#">
+                         <li class="iiit-logo-head"><b> IIIT Banglore-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Banglore,Karnataka</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+                 </td>
+                 <td><b>#29<sup>th</sup>/34</b> in India 2021</td>
+ 
+             </tr>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                 <td>#3</td>
+                 <td>
+                     <ul>
+                     <a href="/root/pages/iiit-pages/iiit-jabalpur.html" class="college-name">
+                         <img class="iiit-logo" src="./assets/iiitdm-jabalpur-logo.jpg" alt="#">
+                         <li class="iiit-logo-head"><b>IIITDM Jabalpur-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Jabalpur,Madhya Pradesh</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+                 </td>
+                 <td><b>#151<sup>th</sup>/200</b> in India 2021</td>
+             </tr>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                 <td>#4</td>
+                 <td>
+                     <ul>
+                         <a class="college-name" href="/root/pages/iiit-pages/iiit-gwalior.html">
+                             <img class="iiit-logo" src="./assets/iiitm-gwalior-logo.jpg" alt="#">
+                         <li class="iiit-logo-head"><b>IIITM Gwalior-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Gwalior,Madhya Pradesh</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+                 </td>
+                 <td><b>#78<sup>th</sup>/300</b> in India 2022</td>
+             </tr>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                 <td>#5</td>
+                 <td>
+                     <ul>
+                         <a class="college-name" href="/root/pages/iiit-pages/iiit-allahabad.html" >
+                             <img class="iiit-logo" src="./assets/iiit-allahabad-logo.jpg" alt="#">
+                         <li class="iiit-logo-head"><b>IIIT Allahabad-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Allahabad,Uttar Pradesh</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+                 </td>
+                 <td><b>#71<sup>th</sup>/100</b> in India 2021</td>
+             </tr>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                 <td>#6</td>
+                 <td>
+                     <ul>
+                         <a class="college-name" href="/root/pages/iiit-pages/iiit-chennai.html">
+                             <img class="iiit-logo" src="./assets/iiitdm-chennai-logo.jpg" alt="#">
+                         <li class="iiit-logo-head"><b> IIITM-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Chennai,Tamil Nadu</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+                 </td>
+                 <td><b>#184<sup>th</sup>/300</b> in India 2022</td>
+             </tr>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                 <td>#7</td>
+                 <td>
+                     <ul>
+                         <a class="college-name" href="/root/pages/iiit-pages/iiit-bhubaneswar.html">
+                             <img class="iiit-logo" src="./assets/iiit-bhubaneswar-logo.jpg" alt="#">
+                             <li class="iiit-logo-head"><b> IIIT Bhubaneswar-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Bhubaneswar,Orissa</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+                 </td>
+                 <td><b>#201<sup>th</sup>/300</b> in India 2021</td>
+             </tr>
+             <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                 <td>#8</td>
+                 <td>
+                     <ul>
+                         <a class="college-name" href="/root/pages/iiit-pages/iiit-lucknow.html">
+                             <img class="iiit-logo" src="./assets/iiit-lucknow-logo.jpg" alt="#">
+                             <li class="iiit-logo-head"><b>IIIT Lucknow-International Institute of Information Technology</b>
+                             <ul>
+                                 <li>Lucknow,Uttar Pradesh</li>
+                             </ul>
+                         </li>
+                     </a>
+                     </ul>
+                 </td>
+                 <td><b>#26<sup>th</sup>/216</b> in India 2022</td>
+             </tr>
+ 
+             </tbody>
+         </table>
+    </div>
+    <!--Top 8 private colleges-->
+ 
+    <h1 class="college-name-head">List of Private Colleges in India Based on 2023 Ranking</h1>   
+    <div class="college-container" id="pvt-college-container">
+         <table class="college-table" id="pvt-college-table">
+            <thead class="college-head">
+                <th>Rank</th>
+                <th>College</th>
+                <th>Ranking</th>
+            </thead>
+            <tbody>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#1</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/pvt-pages/bits-pilani.html">
+                            <img class="pvt-logo" src="./assets/pvt-bits-logo.jpg" alt="#">
+                        <li class="pvt-logo-head"><b>BITS Pilani</b>
+                            <ul>
+                                <li>Pilani,Rajasthan</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+
+                </td>
+                <td><b>#1<sup>st</sup>/238</b> in India 2022</td>
+            </tr>
+            <tr >
+           
+                <td rowspan="2">#2</td>
+                <td onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                    <ul>
+                        <a href="/root/pages/pvt-pages/ict-mumbai.html" class="college-name">             
+                            <img class="pvt-logo" src="./assets/pvt-ict-logo..jpg " alt="#">
+                        <li class="pvt-logo-head"><b>ICT Mumbai-Institute of Chemical Technology</b>
+                            <ul>
+                                <li>Mumbai,Maharashtra</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#18<sup>th</sup>/300</b> in India 2022</td>
+
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>
+                    <ul>
+                    <a href="/root/pages/pvt-pages/mody.html" class="college-name">
+                        <img class="pvt-logo" src="./assets/pvt-mody-logo.jpg" alt="#">
+                        <li class="pvt-logo-head"><b> Mody University</b>
+                            <ul>
+                                <li>Sikar,Rajasthan</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#17<sup>th</sup>/20</b> in India 2021</td>
+            </tr>
+            <tr >
+                <td rowspan="4">#3</td>
+                <td onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                    <ul>
+                        <a class="college-name" href="/root/pages/pvt-pages/vit-vellore.html">
+                            <img class="pvt-logo" src="./assets/pvt-vit-vellore-logo.jpg" alt="#">
+                        <li class="pvt-logo-head"><b>VIT Vellore-Vellore Institute of Technology</b>
+                            <ul>
+                                <li>Vellore,TamilNadu</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#4<sup>th</sup>/218</b> in India 2021</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/pvt-pages/parul.html" >
+                            <img class="pvt-logo" src="./assets/pvt-parul-logo.png" alt="#">
+                        <li class="pvt-logo-head"><b>Parul University</b>
+                            <ul>
+                                <li>Vadodara,Gujarat</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#99<sup>th</sup>/147</b> in India 2019</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/pvt-pages/thapar.html">
+                            <img class="pvt-logo" src="./assets/pvt-thapar-logo.jpg" alt="#">
+                        <li class="pvt-logo-head"><b> Thapar University</b>
+                            <ul>
+                                <li>Patila,Punjab</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#6<sup>th</sup>/238</b> in India 2022</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/pvt-pages/tolani.html">
+                            <img class="pvt-logo" src="./assets/pvt-tolani-logo.jpg" alt="#">
+                            <li class="pvt-logo-head"><b> Tolani Maritime Institue-[TMI]</b>
+                            <ul>
+                                <li>Pune,Maharashtra</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#23<sup>th</sup>/34</b> in India 2021</td>
+            </tr>
+            <tr onmouseover="changebg(this)" onmouseout="changebgclr(this)">
+                <td>#4</td>
+                <td>
+                    <ul>
+                        <a class="college-name" href="/root/pages/pvt-pages/iist.html">
+                            <img class="nit-logo" src="./assets/pvt-iist-logo.jpg" alt="#">
+                            <li class="nit-logo-head"><b>IIST-Indian Institute of Space Science and Technology</b>
+                            <ul>
+                                <li>Thiruvananthapuram</li>
+                            </ul>
+                        </li>
+                    </a>
+                    </ul>
+                </td>
+                <td><b>#43<sup>th</sup>/300</b> in India 2022</td>
+            </tr>
+
+            </tbody>
+        </table>
+   </div>
+</body>
+<script>
+  
+var TableBackgroundNormalColor = "#f0e6e6";
+var TableBackgroundMouseoverColor = "grey";
+
+// These two functions need no customization.
+function changebg(row) { row.style.backgroundColor = TableBackgroundMouseoverColor; }
+function changebgclr(row) { row.style.backgroundColor = TableBackgroundNormalColor; }
+
+
+
+</script>
+</html>
