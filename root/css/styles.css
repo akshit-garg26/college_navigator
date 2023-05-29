@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@display=swap'); */
-
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@display=swap'); 
 *{
     box-sizing: border-box; 
     margin: 0px;
@@ -12,12 +11,10 @@
 .navbar{
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to bottom,#09000f,#270042,#000000ab );
+    background-image: linear-gradient(to bottom,#2f004e 80%,#8149a7);
     padding: 4px;
     height: 64px;
-    /* box-shadow: 4px 5px 5px 5px rgb(255, 255, 255); */
     margin: 0px;
-    /* opacity: 0.7; */
 }
 .left ul,.right ul{
     height: 100%;
@@ -35,8 +32,6 @@
     background-color: #4b24d854;
     border: 1px solid #fff;
     border-radius: 5px;
-    filter: blur(0.5px);
-    -webkit-filter: blur(0.5px);
     cursor: pointer;
 }
 /* .sub-menu-1{
@@ -145,7 +140,7 @@ input#srch{
 
 
 .wrapper{
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(14, 0, 26);
 }
 h1{
     position: absolute;
@@ -159,14 +154,14 @@ h1{
 .typewriter{
     position: relative;
     display: block;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(14, 0, 26);
 }
 .typewriter::after{
     content: '|';
     position: absolute;
     right: 0;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(14, 0, 26);
     width: 100%;
     animation: typing 3s steps(14) alternate infinite,
                 line 1s infinite;
