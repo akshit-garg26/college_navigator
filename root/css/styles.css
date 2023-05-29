@@ -1,0 +1,187 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@display=swap'); */
+
+*{
+    box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;
+    font-family: "'Open Sans', sans-serif";
+    font-weight: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(#09000f,#270042);
+    padding: 4px;
+    height: 64px;
+    box-shadow: 4px 5px 5px 5px rgb(255, 255, 255);
+    margin: 0px;
+    /* opacity: 0.7; */
+}
+.left ul,.right ul{
+    height: 100%;
+}
+.left ul li,.right ul li{
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0px 45px;
+    height: 100%;
+}
+
+.left ul li:hover,.right ul li:hover{
+    background-color: #4b24d854;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+    cursor: pointer;
+}
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-1 ul{
+    display: block;
+    background-color: black;
+    margin: 10px;
+}
+
+.left ul li:hover .sub-menu-1{
+    display:block;
+    position: absolute;
+    background-color: #1c008154;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.left{
+    display: inline-block;
+    width: 77%;
+    margin-left: 17px;
+}
+.right{
+    text-align: center;
+    display: inline-block;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.slide-container{
+    overflow: hidden;
+    background-image: linear-gradient(to right,#320f6bab, #fff);
+    position: relative;
+    width: 100vw;
+    height:78vh;
+}
+.slide-container .slides{
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.slide-container .slides img{
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    opacity: 0.9;
+   
+}
+.slide-container .slides img:not(.active){
+    top: 0;
+    left: -100%;
+}
+@keyframes next1 {
+    from{
+        left: 0%;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2 {
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+.container{
+    position: relative;
+    perspective: 10px;
+}
+input#srch{
+    display: block;
+    position: absolute;
+    width: 500px;
+    left: 36%;
+    top: 80%;
+    font-size: 26px;
+    height: 40px;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+.srch-item{
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 69%;
+    width: 50px;
+    height: 108px;
+}
+.srch-item img{
+    height: 37px;
+    opacity: 0.5;
+}
+
+
+.wrapper{
+    background-color:rgb(0, 0, 0);
+}
+h1{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    font-family: "Incosolata", Consolas, monospace;
+    font-size: 4em;
+    color: #fff;
+    background-color:rgb(0, 0, 0);
+}
+.typewriter{
+    position: relative;
+    display: block;
+    background-color:rgb(0, 0, 0);
+}
+.typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    animation: typing 3s steps(14) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
